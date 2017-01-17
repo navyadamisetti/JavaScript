@@ -39,7 +39,35 @@
 		document.write("This is a default value");
 		break;
 	}
+	
+	document.write("<br />"+"<br />"+"/////////////Whlie loop//////////////"+"<br>");
+	while (nav <= 10)
+	{
+		if (nav == 9)
+		{
+			break;
+		}
+		if (nav%2)
+		{
+			nav++;
+			continue;
+		}
+		document.write(nav+"<br>");
+		nav++;
+	}
 
+	document.write("<br />"+"<br />"+"/////////////do Whlie loop//////////////"+"<br>");
+	nav=10;
+	do {
+		document.write(nav+"<br>");
+		nav--;
+	} while(nav>10);
+
+	document.write("<br />"+"<br />"+"/////////////for loop//////////////"+"<br>");
+	for (var i=0;i<10;i++)
+	{
+		document.write(i+"<br>");
+	}
 	</script>
 </body>
 </html>
